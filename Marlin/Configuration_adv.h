@@ -2022,12 +2022,7 @@
   //#define ARC_SEGMENTS_PER_SEC 50 // Use feedrate to choose segment length (with MM_PER_ARC_SEGMENT as the minimum)
   #define N_ARC_CORRECTION       25 // Number of interpolated segments between corrections
   //#define ARC_P_CIRCLES           // Enable the 'P' parameter to specify complete circles
-<<<<<<< HEAD
-  //#define CNC_WORKSPACE_PLANES    // Allow G2/G3 to operate in XY, ZX, or YZ planes
-  //#define SF_ARC_FIX              // Enable only if using SkeinForge with "Arc Point" fillet procedure
-=======
   #define CNC_WORKSPACE_PLANES      // Allow G2/G3 to operate in XY, ZX, or YZ planes
->>>>>>> 28cc94f291 (Tweaks currently being used.)
 #endif
 
 // Support for G5 with XYZE destination and IJPQ offsets. Requires ~2666 bytes.
@@ -2792,18 +2787,9 @@
    * Use Trinamic's ultra quiet stepping mode.
    * When disabled, Marlin will use spreadCycle stepping mode.
    */
-<<<<<<< HEAD
-  #define STEALTHCHOP_XY
-  #define STEALTHCHOP_Z
-  #define STEALTHCHOP_I
-  #define STEALTHCHOP_J
-  #define STEALTHCHOP_K
-  #define STEALTHCHOP_E
-=======
   // #define STEALTHCHOP_XY
   // #define STEALTHCHOP_Z
   // #define STEALTHCHOP_E
->>>>>>> 28cc94f291 (Tweaks currently being used.)
 
   /**
    * Optimize spreadCycle chopper parameters by using predefined parameter sets
@@ -3637,11 +3623,7 @@
 #define GCODE_MOTION_MODES  // Remember the motion mode (G0 G1 G2 G3 G5 G38.X) and apply for X Y Z E F, etc.
 
 // Enable and set a (default) feedrate for all G0 moves
-<<<<<<< HEAD
-//#define G0_FEEDRATE 3000 // (mm/min)
-=======
 #define G0_FEEDRATE 420 // (mm/m)
->>>>>>> 28cc94f291 (Tweaks currently being used.)
 #ifdef G0_FEEDRATE
   #define VARIABLE_G0_FEEDRATE // The G0 feedrate is set by F in G0 motion mode
 #endif
